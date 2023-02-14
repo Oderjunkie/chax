@@ -1,0 +1,5 @@
+compile = "gcc -std=c11 -pedantic -pedantic-errors -o main main.c"
+run = "./main"
+
+[nix]
+channel = "stable-22_11"

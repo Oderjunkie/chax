@@ -1,0 +1,2257 @@
+In file included from main.c:3:
+chax/autoprintf.h:9:47: error: __VA_OPT__ is not available until C++20
+    9 |   #define _chax_autoprintf1(...) _chax_second(__VA_OPT__(,) _chax_autoprintf2(__VA_ARGS__), _chax_autoprintf7(printf("\n")))
+      |                                               ^
+main.c: In function ‘main’:
+main.c:7:23: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+    7 |     _chax_autoprintf(i);
+      |                       ^
+main.c:7:23: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:23: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+    7 |     _chax_autoprintf(i);
+      | ^   ~~~~~~~~~~
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+main.c:7:1: error: ISO C99 requires at least one argument for the "..." in a variadic macro
+In file included from chax/autoprintf.h:4,
+                 from main.c:3:
+chax/printfspecifier.h:15:57: error: expected ‘)’ before ‘___chax_vaopt’
+   15 |           unsigned int: _chax_obstruct(callback)()("%u" ___chax_vaopt((__VA_ARGS__), ,) __VA_ARGS__), \
+      |                                                         ^~~~~~~~~~~~~
+chax/recursion/eval.h:7:28: note: in definition of macro ‘_chax_eval5’
+    7 |   #define _chax_eval5(...) __VA_ARGS__
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:28: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:40: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:52: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:2:27: note: in expansion of macro ‘_chax_eval1’
+    2 |   #define _chax_eval(...) _chax_eval1(_chax_eval1(_chax_eval1(__VA_ARGS__)))
+      |                           ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:28: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:40: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:52: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:2:39: note: in expansion of macro ‘_chax_eval1’
+    2 |   #define _chax_eval(...) _chax_eval1(_chax_eval1(_chax_eval1(__VA_ARGS__)))
+      |                                       ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:28: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:40: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:52: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:2:51: note: in expansion of macro ‘_chax_eval1’
+    2 |   #define _chax_eval(...) _chax_eval1(_chax_eval1(_chax_eval1(__VA_ARGS__)))
+      |                                                   ^~~~~~~~~~~
+chax/autoprintf.h:13:31: note: in expansion of macro ‘_chax_autoprintf6’
+   13 |   #define _chax_autoprintf5() _chax_autoprintf6
+      |                               ^~~~~~~~~~~~~~~~~
+chax/autoprintf.h:8:33: note: in expansion of macro ‘_chax_eval’
+    8 |   #define _chax_autoprintf(...) _chax_eval(_chax_autoprintf1(__VA_ARGS__))
+      |                                 ^~~~~~~~~~
+chax/autoprintf.h:9:34: note: in expansion of macro ‘_chax_second’
+    9 |   #define _chax_autoprintf1(...) _chax_second(__VA_OPT__(,) _chax_autoprintf2(__VA_ARGS__), _chax_autoprintf7(printf("\n")))
+      |                                  ^~~~~~~~~~~~
+chax/autoprintf.h:12:42: note: in expansion of macro ‘_chax_printfspecifier’
+   12 |   #define _chax_autoprintf4(expr) printf(_chax_printfspecifier(_chax_autoprintf5, expr), expr)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+chax/autoprintf.h:10:58: note: in expansion of macro ‘_chax_autoprintf4’
+   10 |   #define _chax_autoprintf2(car, ...) (_chax_autoprintf7(_chax_autoprintf4(car)) || _chax_obstruct(_chax_autoprintf3)()(__VA_ARGS__))
+      |                                                          ^~~~~~~~~~~~~~~~~
+chax/autoprintf.h:9:61: note: in expansion of macro ‘_chax_autoprintf2’
+    9 |   #define _chax_autoprintf1(...) _chax_second(__VA_OPT__(,) _chax_autoprintf2(__VA_ARGS__), _chax_autoprintf7(printf("\n")))
+      |                                                             ^~~~~~~~~~~~~~~~~
+chax/autoprintf.h:8:44: note: in expansion of macro ‘_chax_autoprintf1’
+    8 |   #define _chax_autoprintf(...) _chax_eval(_chax_autoprintf1(__VA_ARGS__))
+      |                                            ^~~~~~~~~~~~~~~~~
+main.c:7:5: note: in expansion of macro ‘_chax_autoprintf’
+    7 |     _chax_autoprintf(i);
+      |     ^~~~~~~~~~~~~~~~
+chax/printfspecifier.h:9:65: note: to match this ‘(’
+    9 |         #define _chax_printfspecifier(callback, x, ...) _Generic((x), \
+      |                                                                 ^
+chax/recursion/eval.h:7:28: note: in definition of macro ‘_chax_eval5’
+    7 |   #define _chax_eval5(...) __VA_ARGS__
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:28: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:40: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:52: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:2:27: note: in expansion of macro ‘_chax_eval1’
+    2 |   #define _chax_eval(...) _chax_eval1(_chax_eval1(_chax_eval1(__VA_ARGS__)))
+      |                           ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:28: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:40: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:52: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:2:39: note: in expansion of macro ‘_chax_eval1’
+    2 |   #define _chax_eval(...) _chax_eval1(_chax_eval1(_chax_eval1(__VA_ARGS__)))
+      |                                       ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:28: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:40: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:28: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:40: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:28: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:40: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:28: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                            ^~~~~~~~~~~
+chax/recursion/eval.h:6:40: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                        ^~~~~~~~~~~
+chax/recursion/eval.h:6:52: note: in expansion of macro ‘_chax_eval5’
+    6 |   #define _chax_eval4(...) _chax_eval5(_chax_eval5(_chax_eval5(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:5:52: note: in expansion of macro ‘_chax_eval4’
+    5 |   #define _chax_eval3(...) _chax_eval4(_chax_eval4(_chax_eval4(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:4:52: note: in expansion of macro ‘_chax_eval3’
+    4 |   #define _chax_eval2(...) _chax_eval3(_chax_eval3(_chax_eval3(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:3:52: note: in expansion of macro ‘_chax_eval2’
+    3 |   #define _chax_eval1(...) _chax_eval2(_chax_eval2(_chax_eval2(__VA_ARGS__)))
+      |                                                    ^~~~~~~~~~~
+chax/recursion/eval.h:2:51: note: in expansion of macro ‘_chax_eval1’
+    2 |   #define _chax_eval(...) _chax_eval1(_chax_eval1(_chax_eval1(__VA_ARGS__)))
+      |                                                   ^~~~~~~~~~~
+chax/autoprintf.h:8:33: note: in expansion of macro ‘_chax_eval’
+    8 |   #define _chax_autoprintf(...) _chax_eval(_chax_autoprintf1(__VA_ARGS__))
+      |                                 ^~~~~~~~~~
+chax/autoprintf.h:9:34: note: in expansion of macro ‘_chax_second’
+    9 |   #define _chax_autoprintf1(...) _chax_second(__VA_OPT__(,) _chax_autoprintf2(__VA_ARGS__), _chax_autoprintf7(printf("\n")))
+      |                                  ^~~~~~~~~~~~
+chax/autoprintf.h:12:42: note: in expansion of macro ‘_chax_printfspecifier’
+   12 |   #define _chax_autoprintf4(expr) printf(_chax_printfspecifier(_chax_autoprintf5, expr), expr)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~
+chax/autoprintf.h:10:58: note: in expansion of macro ‘_chax_autoprintf4’
+   10 |   #define _chax_autoprintf2(car, ...) (_chax_autoprintf7(_chax_autoprintf4(car)) || _chax_obstruct(_chax_autoprintf3)()(__VA_ARGS__))
+      |                                                          ^~~~~~~~~~~~~~~~~
+chax/autoprintf.h:9:61: note: in expansion of macro ‘_chax_autoprintf2’
+    9 |   #define _chax_autoprintf1(...) _chax_second(__VA_OPT__(,) _chax_autoprintf2(__VA_ARGS__), _chax_autoprintf7(printf("\n")))
+      |                                                             ^~~~~~~~~~~~~~~~~
+chax/autoprintf.h:8:44: note: in expansion of macro ‘_chax_autoprintf1’
+    8 |   #define _chax_autoprintf(...) _chax_eval(_chax_autoprintf1(__VA_ARGS__))
+      |                                            ^~~~~~~~~~~~~~~~~
+main.c:7:5: note: in expansion of macro ‘_chax_autoprintf’
+    7 |     _chax_autoprintf(i);
+      |     ^~~~~~~~~~~~~~~~
