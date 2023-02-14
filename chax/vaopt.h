@@ -1,5 +1,31 @@
 #include "argcount.h"
 
+#ifndef _chax_vaoptsupport
+  #ifdef __STDC__
+    #ifdef __STDC_VERSION__
+      #if __STDC_VERSION__ >= 199901L
+        #define _chax_vaoptsupport _chax_vaoptsupport1(?)
+        #define _chax_vaoptsupport1(...) _chax_vaoptsupport2(__VA_OPT__(,),1,0,)
+        #define _chax_vaoptsupport2(a,b,c,...) c
+      #endif
+    #endif
+  #endif
+#endif
+
+#ifndef _chax_vaoptsupport
+  #define _chax_vaoptsupport 0
+#endif
+
+#ifndef _chax_vaopt
+  #if _chax_vaoptsupport
+    #define _chax_vaopt(args, ...) _chax_vaopt1 args (__VA_ARGS__)
+    #define _chax_vaopt1(...) _chax_vaopt2(_chax_vaopt3, __VA_OPT__(0))
+    #define _chax_vaopt2(a, b) a ## b
+    #define _chax_vaopt3(...)
+    #define _chax_vaopt30(...) __VA_ARGS__
+  #endif
+#endif
+
 #ifndef _chax_vaopt
   #ifdef __STDC__
     #ifdef __STDC_VERSION__
