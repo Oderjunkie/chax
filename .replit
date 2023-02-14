@@ -1,5 +1,5 @@
-compile = "gcc -std=c11 -pedantic -pedantic-errors -o main main.c"
-run = "./main"
+compile = "gcc -o ./ignored/main ./ignored/main.c"
+run = "./ignored/main"
 
 [nix]
 channel = "stable-22_11"
