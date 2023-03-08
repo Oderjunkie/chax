@@ -1,6 +1,6 @@
 #ifndef _chax_typematch
   #ifdef __GNUC__
-    #define _chax_typematch(x, y) __builtin_types_compatible_p(x, y)
+    #define _chax_typematch(x, y) __builtin_types_compatible_p(typeof(x), typeof(y))
   #endif
 #endif
 
