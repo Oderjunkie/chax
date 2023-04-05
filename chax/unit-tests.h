@@ -116,12 +116,12 @@
     }
     #ifdef __GNUC__
         #define _chax_ut_test_case(fn) \
-            decl(bool _f = true,_f) \
-                decl(long _fc = 0,_f) \
-                    decl(long _ac = 0,_f) \
-                        decl(const char* func = #fn,_f) \
-                            execb(printf("\n>> Test " _chax_color_bold(#fn) "\n")) \
-                                execa(__chaxf_ut_testc_statusout())
+            _chax_ut_decl(bool _f = true,_f) \
+                _chax_ut_decl(long _fc = 0,_f) \
+                    _chax_ut_decl(long _ac = 0,_f) \
+                        _chax_ut_decl(const char* func = #fn,_f) \
+                            _chax_ut_execb(printf("\n>> Test " _chax_color_bold(#fn) "\n")) \
+                                _chax_ut_execa(__chaxf_ut_testc_statusout())
     #endif
 #endif
 
