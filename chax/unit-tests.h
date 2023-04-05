@@ -1,8 +1,12 @@
-#ifdef __cplusplus
-    #include <iostream>
-    #include <string>
+#ifndef _chax_ut_includes
+    #define _chax_ut_includes
+    #ifdef __cplusplus
+        #include <iostream>
+        #include <string>
+    #endif
 #endif
-#ifdef __GNUC__
+#ifndef _chax_ut_includes
+    #define _chax_ut_includes
     #include <stdio.h>
     #include <stdlib.h>
 #endif
@@ -17,7 +21,7 @@
         #define _chax_color_yellow(x) "\e[33m" x "\e[0m"
     #endif
     #ifndef _chax_color_bold
-        #define _chax_color_bold(x) "\e[1m" << x << "\e[0m"
+        #define _chax_color_bold(x) "\e[1m" x "\e[0m"
     #endif
 #endif
 #ifndef _chax_support_colors
@@ -39,15 +43,42 @@
                 __VA_ARGS__; \
                 return true; \
             }(),true); _exeb; _exeb = false)
+        #endif
     #endif
 #endif
 #ifndef _chax_ut_execb
-    #ifdef __GNUC__
-        #define _chax_ut_execb(...) \
-            for(bool _exeb = ({ \
-                __VA_ARGS__; \
-                true; \
-            }),true; _exeb; _exeb = false)
+    #ifdef __STDC__
+        #ifdef __STDC_VERSION__
+            #if __STDC_VERSION__ >= 199901L
+                #ifdef __GNUC__
+                    #define _chax_ut_execb(...) \
+                        for(bool _exeb = ({ \
+                            __VA_ARGS__; \
+                            1; \
+                        }),1; _exeb; _exeb = 0)
+                #endif
+            #endif
+        #endif
+    #endif
+#endif
+#ifndef _chax_ut_execb
+    #ifdef __STDC__
+        #ifdef __STDC_VERSION__
+            #if __STDC_VERSION__ >= 199901L
+                #define _chax_ut_execb(...) \
+                    for(bool _exeb = ( \
+                        __VA_ARGS__ \
+                    ),1; _exeb; _exeb = 0)
+                #endif
+            #endif
+        #endif
+    #endif
+#endif
+#ifndef _chax_ut_execb
+    #define _chax_ut_execb(x) \
+        for(bool _exeb = ( \
+            x \
+        ),1; _exeb; _exeb = 0)
     #endif
 #endif
 
@@ -60,24 +91,49 @@
             }(),false)
     #endif
 #endif
-#ifndef _chax_ut_execb
-    #ifdef __GNUC__
-        #define _chax_ut_execa(...) \
-            for(bool _exeb = true; _exeb; _exeb = ({ \
-                __VA_ARGS__; \
-                false; \
-            }),false)
+#ifndef _chax_ut_execa
+    #ifdef __STDC__
+        #ifdef __STDC_VERSION__
+            #if __STDC_VERSION__ >= 199901L
+                #ifdef __GNUC__
+                    #define _chax_ut_execa(...) \
+                        for(bool _exea = 1; _exea; _exea = ({ \
+                            __VA_ARGS__; \
+                            0; \
+                        }),0)
+                #endif
+            #endif
+        #endif
+    #endif
+#endif
+#ifndef _chax_ut_execa
+    #ifdef __STDC__
+        #ifdef __STDC_VERSION__
+            #if __STDC_VERSION__ >= 199901L
+                #define _chax_ut_execa(...) \
+                    for(bool _exea = 1; _exea; _exea = ( \
+                        __VA_ARGS__ \
+                    ),0)
+            #endif
+        #endif
+    #endif
+#endif
+#ifndef _chax_ut_execa
+    #define _chax_ut_execa(x) \
+        for(bool _exea = 1; _exea; _exea = ( \
+            x \
+        ),false)
     #endif
 #endif
 
 #ifndef _chax_ut_decl
     #define _chax_ut_decl(v,f) \
-        for(v; f; f = false)
+        for(v; f; f = 0)
 #endif
 
 #ifndef _chax_ut_errmsg
     #ifdef __cplusplus
-        #define _chax_ut_errmsg(m) std::cout << "(" << (++_chaxns_ut_global::counter,++_fc,++_ac) << ") " << m << ", failed in line " << __LINE__ << "\n"
+        #define _chax_ut_errmsg(m) (std::cout << "(" << (++_chaxns_ut_global::counter,++_fc,++_ac) << ") " << m << ", failed in line " << __LINE__ << "\n")
     #endif
 #endif
 #ifndef _chax_ut_errmsg
@@ -86,7 +142,7 @@
 
 #ifndef _chax_ut_sucmsg
     #ifdef __cplusplus
-        #define _chax_ut_sucmsg(m) std::cout << "(" << (++_chaxns_ut_global::counter,++_ac) << ") " << m << ", succeeded\n";
+        #define _chax_ut_sucmsg(m) (std::cout << "(" << (++_chaxns_ut_global::counter,++_ac) << ") " << m << ", succeeded\n")
     #endif
 #endif
 #ifndef _chax_ut_sucmsg
@@ -106,7 +162,13 @@
     #endif
 #endif
 #ifndef _chax_ut_test_case
-    static inline int __chaxf_ut_testc_statusout(long _fc, long _ac) {
+    static
+    #ifdef __STDC_VERSION__
+        #if __STDC_VERSION__ >= 199901L
+            inline
+        #endif
+    #endif
+    int __chaxf_ut_testc_statusout(long _fc, long _ac) {
         printf("===> Test ");
         if(_fc == 0) 
             printf(_chax_color_yellow("succeeded") "\n");
@@ -126,11 +188,22 @@
 #endif
 
 #ifndef _chax_ut_expr
-    #define _chax_ut_expr(...) \
-    do { \
-        if(!(__VA_ARGS__)) _chax_ut_errmsg(_chax_color_bold("expr ") _chax_color_red(#__VA_ARGS__)); \
-        else _chax_ut_sucmsg(_chax_color_bold("expr ") #__VA_ARGS__) \
-    } while(false)
+    #ifdef __STDC_VERSION__
+        #if __STDC_VERSION__ >= 199901L
+            #define _chax_ut_expr(...) \
+            ( \
+                (!(__VA_ARGS__)) ? _chax_ut_errmsg(_chax_color_bold("expr ") _chax_color_red(#__VA_ARGS__)) \
+                : _chax_ut_sucmsg(_chax_color_bold("expr ") #__VA_ARGS__) \
+            )
+        #endif
+    #endif
+#endif
+#ifndef _chax_ut_expr
+    #define _chax_ut_expr(x) \
+    ( \
+        (!(x)) ? _chax_ut_errmsg(_chax_color_bold("expr ") _chax_color_red(#x)) \
+        : _chax_ut_sucmsg(_chax_color_bold("expr ") #x) \
+    )
 #endif
 
 #ifndef _chax_ut_eq
@@ -140,7 +213,14 @@
     #define _chax_ut_neq(x,y) _chax_ut_expr((x) != (y))
 #endif
 #ifndef _chax_ut_assert
-    #define _chax_ut_assert(...) _chax_ut_expr((__VA_ARGS__) == true)
+    #ifdef __STDC_VERSION__
+        #if __STDC_VERSION__ >= 199901L
+            #define _chax_ut_assert(...) _chax_ut_expr((__VA_ARGS__) == true)
+        #endif
+    #endif
+#endif
+#ifndef _chax_ut_assert
+    #define _chax_ut_assert(x) _chax_ut_expr((x) == true)
 #endif
 
 /* for the VIPs */
