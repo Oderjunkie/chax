@@ -43,7 +43,6 @@
                 __VA_ARGS__; \
                 return true; \
             }(),true); _exeb; _exeb = false)
-        #endif
     #endif
 #endif
 #ifndef _chax_ut_execb
@@ -52,10 +51,10 @@
             #if __STDC_VERSION__ >= 199901L
                 #ifdef __GNUC__
                     #define _chax_ut_execb(...) \
-                        for(bool _exeb = ({ \
+                        for(int _exeb = ({ \
                             __VA_ARGS__; \
                             1; \
-                        }),1; _exeb; _exeb = 0)
+                        }); _exeb; _exeb = 0)
                 #endif
             #endif
         #endif
@@ -66,20 +65,18 @@
         #ifdef __STDC_VERSION__
             #if __STDC_VERSION__ >= 199901L
                 #define _chax_ut_execb(...) \
-                    for(bool _exeb = ( \
+                    for(int _exeb = ( \
                         __VA_ARGS__ \
                     ),1; _exeb; _exeb = 0)
-                #endif
             #endif
         #endif
     #endif
 #endif
 #ifndef _chax_ut_execb
     #define _chax_ut_execb(x) \
-        for(bool _exeb = ( \
+        for(int _exeb = ( \
             x \
         ),1; _exeb; _exeb = 0)
-    #endif
 #endif
 
 #ifndef _chax_ut_execa
@@ -97,10 +94,10 @@
             #if __STDC_VERSION__ >= 199901L
                 #ifdef __GNUC__
                     #define _chax_ut_execa(...) \
-                        for(bool _exea = 1; _exea; _exea = ({ \
+                        for(int _exea = 1; _exea; _exea = ({ \
                             __VA_ARGS__; \
                             0; \
-                        }),0)
+                        }))
                 #endif
             #endif
         #endif
@@ -111,7 +108,7 @@
         #ifdef __STDC_VERSION__
             #if __STDC_VERSION__ >= 199901L
                 #define _chax_ut_execa(...) \
-                    for(bool _exea = 1; _exea; _exea = ( \
+                    for(int _exea = 1; _exea; _exea = ( \
                         __VA_ARGS__ \
                     ),0)
             #endif
@@ -123,7 +120,6 @@
         for(bool _exea = 1; _exea; _exea = ( \
             x \
         ),false)
-    #endif
 #endif
 
 #ifndef _chax_ut_decl
@@ -137,7 +133,7 @@
     #endif
 #endif
 #ifndef _chax_ut_errmsg
-    #define _chax_ut_errmsg(m) printf("(%d) " m ", failed in line "  _chax_stringize(__LINE__) "\n",(++_fc,++_ac))
+    #define _chax_ut_errmsg(m) printf("(%ld) " m ", failed in line "  _chax_stringize(__LINE__) "\n",(++_fc,++_ac))
 #endif
 
 #ifndef _chax_ut_sucmsg
@@ -146,7 +142,7 @@
     #endif
 #endif
 #ifndef _chax_ut_sucmsg
-    #define _chax_ut_sucmsg(m) printf("(%d) " m ", succeeded\n",++_ac)
+    #define _chax_ut_sucmsg(m) printf("(%ld) " m ", succeeded\n",++_ac)
 #endif
 
 #ifndef _chax_ut_test_case
@@ -178,12 +174,11 @@
     }
     #ifdef __GNUC__
         #define _chax_ut_test_case(fn) \
-            _chax_ut_decl(bool _f = true,_f) \
+            _chax_ut_decl(int _f = 1,_f) \
                 _chax_ut_decl(long _fc = 0,_f) \
                     _chax_ut_decl(long _ac = 0,_f) \
-                        _chax_ut_decl(const char* func = #fn,_f) \
-                            _chax_ut_execb(printf("\n>> Test " _chax_color_bold(#fn) "\n")) \
-                                _chax_ut_execa(__chaxf_ut_testc_statusout())
+                        _chax_ut_execb(printf("\n>> Test " _chax_color_bold(#fn) "\n")) \
+                            _chax_ut_execa(__chaxf_ut_testc_statusout(_fc,_ac))
     #endif
 #endif
 
