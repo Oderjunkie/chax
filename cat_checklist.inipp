@@ -1,0 +1,10 @@
+[Main]
+
+[Info]
+name = "chax"
+version = "0.0.0"
+
+[Download]
+dependencies = []
+files = ["$chax","chax/argcount.h","chax/asmexpr.h","chax/assert.h","chax/autoprintf.h","chax/cat.h","chax/constexpr.h","chax/constifexpr.h","chax/constifstmt.h","chax/dbg.h","chax/fold.h","chax/forceassert.h","chax/forceunreachable.h","chax/format.h","chax/ifarr.h","chax/ifptr.h","chax/inlinewith.h","chax/isconstexpr.h","chax/len.h","chax/mapreduce.h","chax/printfspecifier.h","$chax/recursion","chax/recursion.h","chax/staticadd.h","chax/staticassert.h","chax/staticerr.h","chax/staticneg.h","chax/staticsub.h","chax/stringize.h","chax/then.h","chax/typematch.h","chax/unit-tests.h","chax/unreachable.h","chax/vaopt.h","chax/with.h","chax/recursion/defer.h","chax/recursion/empty.h","chax/recursion/eval.h","chax/recursion/obstruct.h","chax/recursion/second.h"]
+scripts = ["install.ccs"]
