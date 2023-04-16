@@ -2,11 +2,11 @@
   #ifdef __STDC__
     #ifdef __STDC_VERSION__
       #if __STDC_VERSION__ >= 199901L
-        #define _chax_then(expr) \
+        #define _chax_then(...) \
           for ( \
             int _then_TEMPORARY_VARIABLE = 1; \
             _then_TEMPORARY_VARIABLE; \
-            (_then_TEMPORARY_VARIABLE = 0, expr) \
+            ((__VA_ARGS__), _then_TEMPORARY_VARIABLE = 0) \
           )
       #endif
     #endif
